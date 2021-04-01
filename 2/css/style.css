@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Myriad Pro"), url("/fonts/MyriadPro-Regular.ttf") format("ttf"),
+    url("/fonts/MyriadPro-Regular.woff") format("woff"),
+    url("/fonts/MyriadPro-Regular.woff2") format("woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: "Myriad Pro";
+    font-size: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: unset;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: #ffffff;
+    font-family: "Myriad Pro";
+}
+
+.logo {
+    margin-top: 60px;
+    margin-bottom: 62px;
+    text-align: left;
+    color: black;
+    font-size: 80px;
+}
+
+.logo-colour {
+    color: #4bcaff;
+}
+
+.menu {
+    width: 100%;
+    height: 70px;
+    background: #35444f;
+    margin:auto; 
+    text-align: center;
+    color: white;
+}
+
+.menu-item {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0 40px;
+    line-height: 70px;
+}
+
+.menu-item:hover {
+    box-shadow: 1px 0px  #818181, -1px 0px #818181;
+    background: #222f3a;
+}
+
+main {
+    width: 1280px;
+    height: 885px;
+}
+
+.sidebar {
+    float: left;
+    width: 340px;
+    height: 405px;
+    border: 1px solid black;
+}
+
+.sidebar a {
+    display: inline-block;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 42px;
+    font-size: 27px;
+    color: #495863;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: black;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 67px;
+    background: #dbdbdb;
+}
+
+.main-block {
+    float: right;
+    width: 882px;
+    height: 884px;
+}
+
+.img-block {
+    width: 880px;
+    height: 526px;
+    border: 1px solid black;
+    overflow: hidden;
+    background: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.tr {
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+}
+
+img.tr:hover {
+    transform: scale(1.15);
+}
+
+.text-block {
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-right: 34px;
+}
+
+footer {
+    height: 70px;
+    background: #b4b7ba;
+    margin-bottom: 30px;
+}
+
+.footermenu {
+    float: left;
+    width: 820px;
+    padding-left: 32px;
+}
+
+ul {
+    font-size: 28px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline-block;
+    padding: 20px 12px 26px;
+}
+
+li a:hover {
+    color: #3181a6;
+    text-decoration: underline;
+}
+
+.copiright {
+    float: right;
+    width: 182px;
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 26px;
+    margin-right: 34px;
+}
