@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'OpenSansBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/opensansbold.ttf) format('ttf'),
+    url(../fonts/opensansbold.woff) format('woff'),
+    url(../fonts/opensansbold.woff2) format('woff2');
+}
+
+body{
+	background:#030305;
+
+}
+
+.wrap {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 80em;
+	width: 1550px;
+	margin-left: -14em;
+	font-size: 350%;
+	text-align: justify;
+	transform: perspective(600px) rotateX(30deg);
+	transform-origin: 50% 100%;
+	overflow: hidden;
+	background:  #030305;
+}
+
+.content {
+	position: absolute;
+	animation: textup 30s  infinite;
+	font-family: 'OpenSansBold';
+	text-align: justify;
+	font-size: 100px;
+	line-height: 1.5;
+	color: #3ad3fd;
+}
+
+.text_h {
+	text-align: center;
+}
+
+.text {
+	text-align: justify;
+	margin: 200px 0;
+}
+
+@keyframes textup {
+	0% { top: 95%; }
+	100% { top: 0%; }
+}
