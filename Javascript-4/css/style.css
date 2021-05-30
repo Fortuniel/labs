@@ -1,0 +1,36 @@
+body {
+	background-color: #52791e;
+	background-image: url(../img/1613234520155081239.jpg);
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrap {
+	position: relative;
+	max-width: 1400px;
+	height: 800px;
+	margin: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-align: center;
+}
+
+.title {
+	position: relative;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	line-height: 2;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	color: #f3ed2f;
+	font-weight: 600;
+}
+
+.nm {
+	font-size: 28px;
+	color: #63e22f;
+}
+
