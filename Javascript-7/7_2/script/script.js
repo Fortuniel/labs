@@ -1,5 +1,4 @@
-'use strict';
-function showList(list)
+function showL(list)
 {
     function arrToUl(root, arr)
     {
@@ -33,4 +32,4 @@ function showList(list)
         i--;
     }, 1000);
 }
-showList(['Овочі', 'Фрукти', ["Яблуко","Вишня"], 'Випічка', 'Молоко', 'Риба', 'Чай']);
+showL(['Овочі', 'Фрукти', ["Яблуко","Вишня"], 'Випічка', 'Молоко', 'Риба', 'Чай']);

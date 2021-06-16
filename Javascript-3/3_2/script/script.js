@@ -1,9 +1,8 @@
-'use strict';
 let A;
 let B;
 let C;
 
-function inputAsking()
+function inpAsk()
 {
   A = +prompt('Enter the first number', 12);
   B = +prompt('Enter the second number', 3);
@@ -18,11 +17,11 @@ function inputAsking()
     else
     {
       alert("Write the correct values");
-      inputAsking();
+      inpAsk();
     }
   }
 }
-function calculator(A, B, C)
+function calc(A, B, C)
 {
   switch (C)
   {
@@ -38,5 +37,5 @@ function calculator(A, B, C)
     alert("Write only +-*/ values")
   }
 }
-inputAsking();
-alert(calculator(A, B, C));
+inpAsk();
+alert(calc(A, B, C));

@@ -1,8 +1,7 @@
-'use strict';
-function createNewUser()
+function crUser()
 {
-    this.firstName = prompt('Enter the first name:');           
-    this.lastName = prompt('Enter the last name:'); 
+    this.fName = prompt('Enter the first name:');           
+    this.lName = prompt('Enter the last name:'); 
     this.birthday = prompt('Enter the your birthday dd.mm.yyyy:'); 
     this.getAge = function()
     {
@@ -22,16 +21,16 @@ function createNewUser()
     }
     this.getLogin = function()
     {
-    	let getLogin = (this.firstName.substr(0, 1) + this.lastName).toLowerCase();
+    	let getLogin = (this.fName.substr(0, 1) + this.lName).toLowerCase();
     	return getLogin;
     }
     this.getPassword = function()
     {
-    	let getPassword = (this.firstName[0].toUpperCase() + this.lastName.toLowerCase() + this.birthday.substring(6,10));
+    	let getPassword = (this.fName[0].toUpperCase() + this.lName.toLowerCase() + this.birthday.substring(6,10));
     	return getPassword;
     }
 }
-let newUser = new createNewUser();
+let newUser = new crUser();
 console.log(`Your age is: ${newUser.getAge()}`);
 console.log(`Your login is: ${newUser.getLogin()}`);
 console.log(`Your password is: ${newUser.getPassword()}`);

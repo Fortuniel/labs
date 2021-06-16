@@ -1,5 +1,4 @@
-'use strict';
-function filterBy(array, dataType)
+function filtr(array, dataType)
 {
     let outArray = array.filter(function(item)
     {
@@ -8,4 +7,4 @@ function filterBy(array, dataType)
     console.log(outArray);
     return outArray;  
 }
-filterBy(['hello', 'world', 23, '23', null], 'string');
+filtr(['hello', 'world', 23, '23', null], 'string');

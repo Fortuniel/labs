@@ -1,15 +1,14 @@
-'use strict';
-function showList(list) {
-    let array = [];
-    let newArray = [];
-    function maps(newObject) {
+function showL(list) {
+    let arr = [];
+    let newArr = [];
+    function maps(newObj) {
 
-        for (let key in newObject) {
-                array.push(newObject[key]);
-                newArray = array.map(word => `<li>${word}</li>`);;
-                list1.innerHTML = newArray.join('');            
+        for (let key in newObj) {
+                arr.push(newObj[key]);
+                newArr = arr.map(word => `<li>${word}</li>`);;
+                list1.innerHTML = newArr.join('');            
         }
     }
     maps(list);
 }
-showList( ['1', '2', '3', 'sea', 'user', 23]);
+showL( ['1', '2', '3', 'sea', 'user', 23]);

@@ -1,17 +1,16 @@
-'use strict';
 let A=0,
     B=prompt("Enter the number"),
-    mass=[];
+    mas=[];
 for(A=1;A<=B;A++)
 {
     if(A % 5 == 0)
     {
-        mass.push(A);
+        mas.push(A);
     }   
 }
-if(mass.length != 0)
+if(mas.length != 0)
 {
-    console.log(mass);
+    console.log(mas);
 }
 else
 { 

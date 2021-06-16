@@ -1,4 +1,3 @@
-'use strict';
 document.getElementById("pr").onblur = function ()
 {
     let tempPrice = +pr.value;

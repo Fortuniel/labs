@@ -1,4 +1,3 @@
-'use strict';
 let name;
 let age;
 do

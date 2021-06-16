@@ -1,24 +1,23 @@
-'use strict';
-let m,
-    n;
+let a,
+    b;
 do
 {
     do
     {
-	    m = prompt("Enter the first number");
+	    a = prompt("Enter the first number");
     }
-    while(m != parseInt(m, 10));
+    while(a != parseInt(a, 10));
     do
     {
-	    n = prompt("Enter the second number");
+	    b = prompt("Enter the second number");
     }
-    while(n != parseInt(n, 10));
+    while(b != parseInt(b, 10));
 }
-while(m>n);
-function simpleNumbers(m, n)
+while(a>b);
+function sNumbers(a, b)
 {
     let res = [];
-    for(let i = m, flag = false; i <= n; i++, flag = 0)
+    for(let i = a, flag = false; i <= b; i++, flag = 0)
     {
         for(let j = 2; j * 2 <= i; j++)
         {
@@ -33,4 +32,4 @@ function simpleNumbers(m, n)
     }
     return res;
 }
-console.log(simpleNumbers(m,n));
+console.log(sNumbers(a,b));

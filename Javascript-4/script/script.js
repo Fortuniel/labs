@@ -1,13 +1,12 @@
-'use strict';
-function createNewUser()
+function crUser()
 {
-    this.firstName = prompt('Enter the first name:');           
-    this.lastName = prompt('Enter the last name:'); 
+    this.fName = prompt('Enter the first name:');           
+    this.lName = prompt('Enter the last name:'); 
     this.getLogin = function()
     {
-        let getLogin = (this.firstName.substr(0, 1) + this.lastName).toLowerCase();
+        let getLogin = (this.fName.substr(0, 1) + this.lName).toLowerCase();
         return getLogin;
     }
 }
-let newUser = new createNewUser();
+let newUser = new crUser();
 console.log(`Your login is: ${newUser.getLogin()}`);
